@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="width: 540px">
+        <h1 style="text-transform:uppercase; font-size:20px;">Оформить заказ</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="print-tab" data-toggle="tab" href="#print" role="tab" aria-controls="print" aria-selected="true">Печать</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="stamp-tab" data-toggle="tab" href="#stamp" role="tab" aria-controls="stamp" aria-selected="false">Штамп</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="facsimile-tab" data-toggle="tab" href="#facsimile" role="tab" aria-controls="facsimile" aria-selected="false">Факсимиле</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="print" role="tabpanel" aria-labelledby="print-tab">
+                <form>
+                    <div class="form-group">
+                        <label for="printForm">Печать</label>
+                        <select class="form-control" id="printForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgencyForm">Срочность</label>
+                        <select class="form-control" id="urgencyForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                            <label for="deliveryForm">Способ получения</label>
+                            <select class="form-control" id="deliveryForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="materialForm">Материал</label>
+                        <select class="form-control" id="materialForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rigForm">Оснастка</label>
+                        <select class="form-control" id="rigForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>                        
+                </form>
+            </div>
+            <div class="tab-pane fade" id="stamp" role="tabpanel" aria-labelledby="stamp-tab">
+                <form>
+                    <div class="form-group">
+                        <label for="stampHeightForm">Высота штампа</label>
+                        <textarea class="form-control" id="stampHeightForm" rows="1" aria-describedby="stampHeightForm--mm" style="display: inline-block; resize:none; width: 93%;"></textarea><span id="stampHeightForm--mm"> мм</span>   
+                                             
+                    </div>
+                    <div class="form-group">
+                        <label for="stampWidthForm">Ширина штампа</label>
+                        <textarea class="form-control" id="stampWidthForm" rows="1" aria-describedby="stampWidthForm--mm" style="display: inline-block; resize:none; width: 93%;"></textarea>
+                        <span id="stampWidthForm--mm"> мм</span> 
+                    </div>
+                    <div class="form-group">
+                        <label for="urgencyForm">Срочность</label>
+                        <select class="form-control" id="urgencyForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                            <label for="deliveryForm">Способ получения</label>
+                            <select class="form-control" id="deliveryForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="materialForm">Материал</label>
+                        <select class="form-control" id="materialForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rigForm">Оснастка</label>
+                        <select class="form-control" id="rigForm">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>                        
+                </form>
+            </div>
+            <div class="tab-pane fade" id="facsimile" role="tabpanel" aria-labelledby="facsimile-tab">
+                Facsimile here...
+            </div>
+        </div>
+        <img class="mx-auto d-block mt-3 mb-3" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/stamp-13-79840.png" alt="" >
+        <span>Цена</span>
+        <div class="bg-secondary" style="text-align: center; font-size: 50px;">
+            500Р
+        </div>
+        <button type="button" class="btn btn-primary mt-3 float-right">Посчитать</button>
+    </div>  
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
